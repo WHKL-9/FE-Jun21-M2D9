@@ -1,0 +1,92 @@
+.jumbotron {
+    background: rgb(6,246,247);
+    background: linear-gradient(180deg, rgba(6,246,247,0.04525560224089631) 0%, rgba(8,150,242,1) 50%, rgba(2,0,36,1) 100%);
+    animation: fade-in 3s 0.5s backwards;
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.favourite .card{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border: 2px solid black;
+    position: relative;
+}
+
+.container .row .card img{
+    /* max-width: 180px;
+    max-height: 200px; */
+    padding-top: 5px;
+}
+
+.container .row .card .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favourite{
+    background: rgb(240,242,246);
+    background: radial-gradient(circle, rgba(240,242,246,1) 0%, rgba(26,58,195,1) 55%, rgba(2,13,25,1) 100%);
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.card span{
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+
+
+tbody tr:nth-child(even){
+    background-color: white;
+    color:black;
+}
+
+thead tr{
+    background-color: lightgray;
+    color: black;
+}
+
+.table{
+    border: 2px solid red;
+    /* /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+.tracklist{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* <!-- EXERCISE 6
+Add an "Add Track" button under the tracklist of the album. 
+It should have a nice shadow transition when it gets hovered (with the box-shadow property) to look like 
+the button was elevating itself every time the user hovers onto it.        
+--> */
+.btn-addSong{
+    transition: all 1.5s;
+}
+
+.btn-addSong:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 5px 10px #006400;
+
+}
+
+
+
